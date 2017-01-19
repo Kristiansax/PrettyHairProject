@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.Core", "PrettyHa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.Test", "PrettyHair.Test\PrettyHair.Test.csproj", "{814703B8-CAF9-40E9-8C0C-C37D75C89491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.DAL", "PrettyHair.DAL\PrettyHair.DAL.csproj", "{F30DB6A6-3766-49CF-97C5-EFE16A6AEBA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrettyHair.GUI", "PrettyHair.GUI\PrettyHair.GUI.csproj", "{67E3A530-691B-4711-AB43-33869CF14BF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{814703B8-CAF9-40E9-8C0C-C37D75C89491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30DB6A6-3766-49CF-97C5-EFE16A6AEBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30DB6A6-3766-49CF-97C5-EFE16A6AEBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30DB6A6-3766-49CF-97C5-EFE16A6AEBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30DB6A6-3766-49CF-97C5-EFE16A6AEBA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E3A530-691B-4711-AB43-33869CF14BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E3A530-691B-4711-AB43-33869CF14BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E3A530-691B-4711-AB43-33869CF14BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E3A530-691B-4711-AB43-33869CF14BF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
