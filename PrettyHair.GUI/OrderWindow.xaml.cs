@@ -36,7 +36,7 @@ namespace PrettyHair.GUI
 
 
             delivery = Convert.ToDateTime(DeliveryDateTextBox.Text);
-            date =     Convert.ToDateTime(OrderDateTextBox.Text);
+            date     = Convert.ToDateTime(OrderDateTextBox.Text);
 
             Core.Facade.CoreFacade.Instance.CreateOrder(date, delivery);
         }
