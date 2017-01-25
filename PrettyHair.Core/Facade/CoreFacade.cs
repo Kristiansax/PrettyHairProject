@@ -28,18 +28,78 @@ namespace PrettyHair.Core.Facade
                 return instance;
             }
         }
+
+        private CustomerRepository CustomerRepo;
+        private ItemRepository ItemRepo;
+        private OrderlineRepository OrderlineRepo;
+        private OrderRepository OrderRepo;
+
         private CoreFacade()
         {
+            CustomerRepo = new CustomerRepository();
+            ItemRepo = new ItemRepository();
+            OrderlineRepo = new OrderlineRepository();
+            OrderRepo = new OrderRepository();
         }
 
-        CustomerRepository CustomerRepo = new CustomerRepository();
-        ItemRepository ItemRepo = new ItemRepository();
-        OrderlineRepository OrderlineRepo = new OrderlineRepository();
-        OrderRepository OrderRepo = new OrderRepository();
-
-        public void CreateCustomer()
+        //CustomerRepository 
+        public void CreateCustomer(ICustomer customer)
         {
+            CustomerRepo.CreateCustomer(customer);
+        }
 
+        public void RemoveCustomerByID(int ID)
+        {
+            CustomerRepo.RemoveCustomerByID(ID);
+        }
+
+        public void CustomerClear()
+        {
+            CustomerRepo.Clear();
+        }
+
+        public void GetCustomerByID(int ID)
+        {
+            CustomerRepo.GetCustomerByID(ID);
+        }
+
+        //OrderRepository
+        public void CreateOrder(IOrder order)
+        {
+            OrderRepo.CreateOrder(order);
+        }
+
+        public void RemoveOrderByID(int ID)
+        {
+            OrderRepo.RemoveByID(ID);
+        }
+
+        public void OrderClear()
+        {
+            OrderRepo.Clear();
+        }
+
+        public void GetOrderByID(int ID)
+        {
+            OrderRepo.GetOrderByID(ID);
+        }
+
+        //OrderlineRepository
+        public void CreateOrderline(IOrderline orderline)
+        {
+            OrderlineRepo.CreateOrderline(orderline);
+        }
+        public void RemoveOrderlineByID(int ID)
+        {
+            OrderlineRepo.RemoveByID(ID);
+        }
+        public void OrderlineClear()
+        {
+            OrderlineRepo.Clear();
+        }
+        public void GetOrderlineByID(int ID)
+        {
+            OrderlineRepo.GetOrderlineByID(ID);
         }
 
     }
