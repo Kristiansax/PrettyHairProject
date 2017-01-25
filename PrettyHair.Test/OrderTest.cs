@@ -11,11 +11,11 @@ namespace PrettyHair.Test
     {
         public OrderRepository OR = new OrderRepository();
 
-        public IOrder order1 = new Order( new DateTime(2017, 12, 05), DateTime.Today, 1 );
-        public IOrder order2 = new Order( new DateTime(2017, 02, 04), DateTime.Today, 1);
-        public IOrder order3 = new Order( new DateTime(2017, 03, 03), DateTime.Today, 1);
-        public IOrder order4 = new Order( new DateTime(2017, 04, 02), DateTime.Today, 1);
-        public IOrder order5 = new Order( new DateTime(2017, 05, 01), DateTime.Today, 1);
+        public IOrder order1 = new Order( new DateTime(2017, 12, 05), DateTime.Today);
+        public IOrder order2 = new Order( new DateTime(2017, 02, 04), DateTime.Today);
+        public IOrder order3 = new Order( new DateTime(2017, 03, 03), DateTime.Today);
+        public IOrder order4 = new Order( new DateTime(2017, 04, 02), DateTime.Today);
+        public IOrder order5 = new Order( new DateTime(2017, 05, 01), DateTime.Today);
 
         [TestMethod]
         public void MustBeEmptyByDefault()
@@ -67,7 +67,7 @@ namespace PrettyHair.Test
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Delivery()
         {
-            new Order(new DateTime(2016, 12, 05), new DateTime(2016, 12, 06), 1);
+            new Order(new DateTime(2016, 12, 05), new DateTime(2016, 12, 06));
         }
     }
 }
