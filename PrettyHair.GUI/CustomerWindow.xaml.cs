@@ -10,32 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PrettyHair.GUI;
+using PrettyHair.Core.Facade;
 
 namespace PrettyHair.GUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CustomerWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CustomerWindow : Window
     {
-        public MainWindow()
+        public CustomerWindow()
         {
             InitializeComponent();
         }
 
-        private void CustomerButton_Click(object sender, RoutedEventArgs e)
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            CustomerWindow cuswin = new CustomerWindow();
-            cuswin.Show();
+            FirstNameTextBox.Clear();
+            LastNameTextBox.Clear();
+            Close();
         }
 
-        private void OrderButton_Click(object sender, RoutedEventArgs e)
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            OrderWindow ordwin = new OrderWindow();
-            ordwin.Show();
+            CoreFacade.Instance.CreateCustomer(FirstNameTextBox.Text, LastNameTextBox.Text);
+            Close();
         }
     }
 }

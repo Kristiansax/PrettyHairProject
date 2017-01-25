@@ -1,0 +1,18 @@
+﻿<Window x:Class="PrettyHair.GUI.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrettyHair.GUI"
+        mc:Ignorable="d"
+        Title="OrderWindow" Height="298.921" Width="453.237">
+    <Grid>
+        <Label x:Name="OrderDateLabel" Content="Order Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,88,0,0"/>
+        <Label x:Name="DeliveryDateLabel" Content="Delivery Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="263,88,0,0"/>
+        <TextBox x:Name="OrderDateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="DD.MM.YYYY" VerticalAlignment="Top" Width="120" Margin="81,119,0,0"/>
+        <TextBox x:Name="DeliveryDateTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="DD.MM.YYYY" VerticalAlignment="Top" Width="120" Margin="263,119,0,0"/>
+        <Button x:Name="CreateOrderButton" Content="Create Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="203,240,0,0" Click="CreateOrderButton_Click"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="308,240,0,0" Click="CancelButton_Click"/>
+
+    </Grid>
+</Window>

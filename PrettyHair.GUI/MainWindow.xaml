@@ -8,8 +8,8 @@
         Title="PrettyHair" Height="350" Width="525">
     <Grid>
 
-        <Button x:Name="CustomerButton" Content="Customer" HorizontalAlignment="Left" Margin="225,80,0,0" VerticalAlignment="Top" Width="100" />
-        <Button x:Name="OrderButton" Content="Orders" HorizontalAlignment="Left" Margin="225,120,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="CustomerButton" Content="Add Customer" HorizontalAlignment="Left" Margin="211,117,0,0" VerticalAlignment="Top" Width="100" Click="CustomerButton_Click" />
+        <Button x:Name="OrderButton" Content="Orders" HorizontalAlignment="Left" Margin="211,157,0,0" VerticalAlignment="Top" Width="100" Click="OrderButton_Click"/>
 
     </Grid>
 </Window>
