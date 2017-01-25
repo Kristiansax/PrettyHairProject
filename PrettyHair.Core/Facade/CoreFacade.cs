@@ -39,8 +39,7 @@ namespace PrettyHair.Core.Facade
 
         public void CreateCustomer()
         {
-            ICustomer abemand;
-            CustomerRepo.CreateCustomer(abemandx);
+
         }
 
     }
