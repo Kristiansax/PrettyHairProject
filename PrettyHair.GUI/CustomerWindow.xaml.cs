@@ -27,8 +27,6 @@ namespace PrettyHair.GUI
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            FirstNameTextBox.Clear();
-            LastNameTextBox.Clear();
             Close();
         }
 
