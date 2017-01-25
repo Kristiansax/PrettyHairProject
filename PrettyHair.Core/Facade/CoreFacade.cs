@@ -69,8 +69,12 @@ namespace PrettyHair.Core.Facade
         }
 
         //OrderRepository
-        public void CreateOrder(IOrder order)
+        public void CreateOrder(DateTime deliverydate, DateTime orderdate)
         {
+
+            IOrder order = new Order(deliverydate, orderdate);
+            order.DeliveryDate = deliverydate;
+            order.OrderDate = orderdate;
             OrderRepo.CreateOrder(order);
         }
 

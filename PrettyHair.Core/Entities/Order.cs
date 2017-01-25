@@ -14,14 +14,13 @@ namespace PrettyHair.Core.Entities
         public int CustomerID { get; set; }
         public bool Processed { get; set; }
 
-        public Order(DateTime deliverydate, DateTime orderdate, int cID)
+        public Order(DateTime deliverydate, DateTime orderdate)
         {
             if ((DateTime.Compare(deliverydate, orderdate)) < 0)
                 throw new ArgumentOutOfRangeException();
 
             DeliveryDate = deliverydate;
             OrderDate    = orderdate;
-            CustomerID   = cID;
             Processed    = false;
         }
     }
