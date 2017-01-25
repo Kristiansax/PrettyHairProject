@@ -43,8 +43,13 @@ namespace PrettyHair.Core.Facade
         }
 
         //CustomerRepository 
-        public void CreateCustomer(ICustomer customer)
+        public void CreateCustomer(string firstname, string lastname)
         {
+            
+            Customer customer = new Customer(firstname,lastname);
+            customer.Firstname = firstname;
+            customer.Lastname = lastname;
+            
             CustomerRepo.CreateCustomer(customer);
         }
 
