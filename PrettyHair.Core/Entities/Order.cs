@@ -16,7 +16,7 @@ namespace PrettyHair.Core.Entities
 
         public Order(DateTime deliverydate, DateTime orderdate)
         {
-            if ((DateTime.Compare(deliverydate, orderdate)) < 0)
+            if ((DateTime.Compare(deliverydate, orderdate)) > 0)
                 throw new ArgumentOutOfRangeException();
 
             DeliveryDate = deliverydate;
