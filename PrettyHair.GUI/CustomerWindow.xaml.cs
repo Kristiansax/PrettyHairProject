@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using PrettyHair.Core.Facade;
+using PrettyHair.GUI;
 
 namespace PrettyHair.GUI
 {
@@ -33,7 +34,14 @@ namespace PrettyHair.GUI
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             CoreFacade.Instance.CreateCustomer(FirstNameTextBox.Text, LastNameTextBox.Text);
-            Close();
+            
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            /*Controller controller = new Controller();
+            controller.
+            CoreFacade.Instance.RemoveCustomerByID(ID)*/
         }
     }
 }

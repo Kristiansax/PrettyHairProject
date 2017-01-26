@@ -63,9 +63,14 @@ namespace PrettyHair.Core.Facade
             CustomerRepo.Clear();
         }
 
-        public void GetCustomerByID(int ID)
+        public ICustomer GetCustomerByID(int ID)
         {
-            CustomerRepo.GetCustomerByID(ID);
+            return CustomerRepo.GetCustomerByID(ID);
+        }
+
+        public int GetCount()
+        {
+            return CustomerRepo.GetCount();
         }
 
         //OrderRepository

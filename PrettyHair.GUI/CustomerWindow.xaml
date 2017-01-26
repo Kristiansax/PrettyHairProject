@@ -7,12 +7,17 @@
         mc:Ignorable="d"
         Title="CustomerWindow" Height="276.259" Width="489.928">
     <Grid Margin="0,0,3.6,3">
-        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="70,112,0,0"/>
-        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="256,112,0,0"/>
-        <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,69,0,0"/>
-        <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="256,69,0,0"/>
-        <Button x:Name="CreateButton" Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="247,213,0,0" Click="CreateButton_Click"/>
-        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="341,213,0,0" Click="CancelButton_Click"/>
+        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="150,99,0,0"/>
+        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Margin="150,128,0,0"/>
+        <Label x:Name="FirstNameLabel" Content="First Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,96,0,0"/>
+        <Label x:Name="LastNameLabel" Content="Last Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,126,0,0"/>
+        <Button x:Name="CreateButton" Content="Create" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="334,72,0,0" Click="CreateButton_Click"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="381,213,0,0" Click="CancelButton_Click"/>
+        <Label x:Name="CustomerCountLabel" Content="Customer Count" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,30,0,0"/>
+        <Label x:Name="CustomerCountNumberLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="274,30,0,0"/>
+        <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="334,99,0,0" Click="DeleteButton_Click"/>
+        <Button x:Name="UpButton" Content="Up" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="334,128,0,0"/>
+        <Button x:Name="DownButton" Content="Down" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="334,155,0,0"/>
 
     </Grid>
 </Window>

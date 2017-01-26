@@ -31,15 +31,25 @@ namespace PrettyHair.GUI
 
         private void CreateOrderButton_Click(object sender, RoutedEventArgs e)
         {
-            DateTime delivery;
-            DateTime date;
+            {
+                DateTime delivery;
+                DateTime date;
 
 
-            delivery = Convert.ToDateTime(DeliveryDateTextBox.Text);
-            date     = Convert.ToDateTime(OrderDateTextBox.Text);
+                delivery = Convert.ToDateTime(DeliveryDateTextBox.Text);
+                date = Convert.ToDateTime(OrderDateTextBox.Text);
 
-            Core.Facade.CoreFacade.Instance.CreateOrder(date, delivery);
-            Close();
+                try
+                {
+                    Core.Facade.CoreFacade.Instance.CreateOrder(date, delivery);
+                }
+                catch (ArgumentOutOfRangeException exc)
+                {
+                    MessageBox.Show("Change Delivery Date Please");
+                }
+
+                Close();
+            }
         }
     }
 }

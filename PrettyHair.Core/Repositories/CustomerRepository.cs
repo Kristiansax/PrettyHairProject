@@ -54,5 +54,14 @@ namespace PrettyHair.Core.Repositories
         {
             Customers.Add(ID, customer);
         }
+        public int GetCount()
+        {
+            return Customers.Count();
+        }
+
+        public int ReturnID()
+        {
+            return ID;
+        }
     }
 }
